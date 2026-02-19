@@ -9,7 +9,10 @@ function Button(){
   boxShadow: "rgb(0, 255, 255)",
    }
    return (
+      <>
     <button style={styles}>Touch me</button>
+    <button className="Button3">punch me</button>
+    </>
    );
 }
 

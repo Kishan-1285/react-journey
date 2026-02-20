@@ -1,11 +1,25 @@
-function Student(bhaii){
-   return( 
-     <div className="Box">
-         <p>Name:{bhaii.name}</p>
-         <p>Age: {bhaii.age}</p>
-         <p>Student:{bhaii.isStudent ? "Yes" :"No"}</p>
-     </div>
-    );
+import PropTypes from "prop-types";
+
+function Student(props) {
+  return (
+    <div className="Box">
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+      <p>Student: {props.isStudent ? "Yes" : "No"}</p>
+    </div>
+  );
 }
 
-export default Student
+Student.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  isStudent: PropTypes.bool,
+}
+
+Student.defaultProps = {
+    name:"Guest",
+    age:0,
+    isStudent:false,
+}
+
+export default Student;

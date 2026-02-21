@@ -6,7 +6,7 @@ function App() {
        <Student name="Gokul" age={20} isStudent={false}/>
         <Student name="Guru" age={21} isStudent={true}/>
          <Student name="Ashwin" age={22} isStudent={true}/>
-         <Student/>
+         {/* <Student/> */}
     </>
     );
    

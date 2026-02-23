@@ -10,12 +10,12 @@ function UserGreeting(props){
 
 
 
-      if(props.isLogged){
-         return <h2 className="username">Welcome {props.UserName}</h2>
-     }
-     else{
-         return <h2>You are not welcome,Fuck off da Gokul !</h2>
-     }
+    //   if(props.isLogged){
+    //      return <h2 className="username">Welcome {props.UserName}</h2>
+    //  }
+    //  else{
+    //      return <h2>You are not welcome,Fuck off da Gokul !</h2>
+    //  }
    
 
 }

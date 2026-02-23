@@ -1,0 +1,19 @@
+.username{
+    background-color: green;
+    color: aqua;
+    border: 0ch;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0%;
+ 
+}
+
+.Fail{
+    background-color: red;
+    color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    margin: 0%;
+
+}

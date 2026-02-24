@@ -3,11 +3,10 @@ function List(){
                   {id:2,name:"mango",calories:106},
                   {id:3,name:"banana",calories:159},
                   {id:4,name:"orange",calories:123},
-                 {id:5,name:"grapes",calories:37}]
-
+                  {id:5,name:"grapes",calories:37}]
 
       fruits.sort((a,b)=>a.name.localeCompare(b.name));
-    //fruits.sort((a,b)=>b.name.localeCompare(a.name));
+    fruits.sort((a,b)=>b.name.localeCompare(a.name));
 
     const lowCalFruits =  fruits.filter(fruit=>fruit.calories<100);
     const highCalFruits = fruits.filter(fruit=>fruit.calories>=100);
@@ -18,10 +17,10 @@ function List(){
                                             <b>{highCalFruit.calories}</b></li>)
    return(
        <>
-       <h2>lowcalorie-fruits</h2>
-       <ol className="fruits">{fruitlist}</ol>
-       <h2>highcalorie-fruits</h2>
-       <ol>{fruitlist_2}</ol>
+       <h2 className="fruits">lowcalorie-fruits</h2>
+       <ol className="listitems">{fruitlist}</ol>
+       <h2 className="fruits">highcalorie-fruits</h2>
+       <ol className="listitems">{fruitlist_2}</ol>
        </>
           
    );

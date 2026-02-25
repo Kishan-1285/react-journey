@@ -12,6 +12,7 @@ function App() {
                          {id:8,name:"drumstick",calories:122},
                          {id:9,name:"potato",calories:163},
                          {id:10,name:"ladiesfinger",calories:102}];
+                         
   return(
     <>
       <List item={fruits} category="fruits"/>

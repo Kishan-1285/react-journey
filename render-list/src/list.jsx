@@ -7,12 +7,15 @@ function List(){
 
 
       fruits.sort((a,b)=>a.name.localeCompare(b.name));
-    //   fruits.sort((a,b)=>b.name.localeCompare(a.name));
+    //fruits.sort((a,b)=>b.name.localeCompare(a.name));
 
-   const fruitlist = fruits.map(fruit=><li key={fruits.id}>{fruit.name}:&nbsp;
-                                            <b>{fruit.calories}</b></li>)
 
-   return(<ol className="fruits">{fruitlist}</ol>);
+   const fruitlist = Fruits.map(Fruit=><li key={Fruit.id}>{Fruit.name}:&nbsp;
+                                            <b>{Fruit.calories}</b></li>)
+
+   return(<ol className="fruits">{fruitlist}</ol>
+        
+   );
 }
      
 export default List

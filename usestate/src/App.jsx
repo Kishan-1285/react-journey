@@ -1,7 +1,7 @@
 import Mycomponent from "./Mycomponent.jsx";
 import Counter from './Counter.jsx';
 function App() {
-   const marks =["eng","mat","sci","ss"];
+   const marks =["English","Maths","Science","Communication"];
    
  return(
     <>

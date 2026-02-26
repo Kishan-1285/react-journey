@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-function Counter({subject}){
-    
+// function Counter({subject}){
+    function Counter(){
     
     const[count,setCount]= useState(0);
 
@@ -22,7 +22,8 @@ function Counter({subject}){
 
     return(
         <div className="counter">
-        <p>{subject}: {count}</p>
+        {/* <p>{subject}: {count}</p> */}
+         <p>Marks: {count}</p>
         <button onClick={Increase}>increament</button>
 
         <button onClick={Decrease}>decreament</button>

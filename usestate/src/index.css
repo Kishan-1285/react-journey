@@ -1,0 +1,10 @@
+.whole{
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  background-color: #f0f0f0;
+  outline: 5px solid red;       
+  outline-offset: -5px;
+  padding: 10px;
+
+}

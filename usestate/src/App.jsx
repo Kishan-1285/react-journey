@@ -10,7 +10,7 @@ function App() {
                 <Counter key={sub} subject={sub} />
             ))} */}
 
-      <Counter/>
+      <Counter />
       
    </>
  );

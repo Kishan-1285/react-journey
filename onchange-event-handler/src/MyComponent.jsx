@@ -28,7 +28,7 @@ function MyComponent(){
     
     return(
 
-        <>
+        <div className='All'>
           <input placeholder='Enter your name' value={name} onChange={handleChange}/>
           <p>Name : {name}</p>
 
@@ -59,7 +59,7 @@ function MyComponent(){
                    onChange={handleShippingChange}/>
             Delivery
           </label>
-        </>
+        </div>
 
     );
 }

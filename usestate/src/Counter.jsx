@@ -5,10 +5,13 @@ import React, {useState} from "react";
     const[count,setCount]= useState(0);
 
 
-
-    const Increase = ()=> {
+    function Increase(){
         setCount(count+1);
-    };
+    }
+
+    // const Increase = ()=> {
+    //     setCount(count+1);
+    // };
 
     const Decrease = ()=> {
         setCount(count-1);

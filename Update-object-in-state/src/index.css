@@ -1,0 +1,23 @@
+.Updater-func{
+  justify-content: center;
+  text-align: center;
+  border: solid 5px;
+  padding :10px;
+  margin: 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+body{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+
+}
+
+input {
+  text-align: center;   /* left | center | right */
+  border-radius: 5px;
+}

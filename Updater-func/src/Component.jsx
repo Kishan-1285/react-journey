@@ -5,11 +5,13 @@ function Component(){
     const [count,setCount] = useState(0);
 
     const handleIncrease = () =>{
-        setCount(c => c+1)    //updater function (use this arrow fnction in the code it will me more efficient)
+        setCount(c => c+1)        //updater function (use this arrow fnction in the code it will me more efficient)
         setCount(c => c+1)
     }
     const handleDecrease = () =>{
         setCount(c => c-1)
+        setCount(c => c-1)
+
     }
     const handleReset =() =>{
         setCount(c => c=0)

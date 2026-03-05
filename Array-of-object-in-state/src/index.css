@@ -1,0 +1,5 @@
+body{
+  justify-content: center;
+  display: flex;
+  border: solid 5px;
+}

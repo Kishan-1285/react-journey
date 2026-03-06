@@ -31,7 +31,7 @@ function MyComponent(){
     }
 
     return(
-        <>
+        <div className='Obj'>
         <h1>Car Lists</h1>
         <ol>
             {car.map((cars,index) => 
@@ -46,7 +46,7 @@ function MyComponent(){
         <input type='text' placeholder='Enter Make' value={carMake} onChange={handleMakeChange}/><br/>
         <input type='text' placeholder='Enter Model' value={carModel} onChange={handleModelChange}/><br/>
         <button onClick={handleAddCar}>Add to List</button>
-        </>
+        </div>
     );
 }
 

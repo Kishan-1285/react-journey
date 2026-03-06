@@ -1,5 +1,75 @@
-body{
-  justify-content: center;
-  display: flex;
-  border: solid 5px;
+/* Page container */
+.Obj{
+    width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #f4f6f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Title */
+.Obj h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Ordered list */
+.Obj ol{
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Car items */
+.Obj li{
+    list-style: none;
+    background: #ffffff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect for removing */
+.Obj li:hover{
+    background: #ffefef;
+    transform: scale(1.02);
+}
+
+/* Inputs */
+.Obj input{
+    width: 90%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Input focus */
+.Obj input:focus{
+    border-color: #4a90e2;
+}
+
+/* Button */
+.Obj button{
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #4a90e2;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Button hover */
+.Obj button:hover{
+    background: #357abd;
 }

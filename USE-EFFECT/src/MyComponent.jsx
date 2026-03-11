@@ -4,6 +4,7 @@ function MyComponent(){
 
     const[count,setCount] = useState(0);
     const[color,setColor] = useState("green");
+    
     useEffect( ()=>{
         document.title= `count:${count} ${color}`
     },[count,color])

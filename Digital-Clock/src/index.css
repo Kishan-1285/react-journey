@@ -1,13 +1,44 @@
-body{
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
+* {
+    box-sizing: border-box;
 }
 
-.clock{
-    font-size: 6rem;
-    font-weight: bold;
-    font-family: monospace;
-    
+:root {
+    --bg-1: #0b0f1a;
+    --bg-2: #121c2e;
+    --accent: #2fe6a0;
+    --glow: rgba(47, 230, 160, 0.35);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(1200px 600px at 20% 10%, #1a2a44 0%, var(--bg-1) 45%) ,
+                radial-gradient(900px 500px at 80% 80%, #143047 0%, var(--bg-2) 55%);
+    color: #e9f2ff;
+    font-family: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+}
+
+.digital-clock {
+    padding: 28px 40px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+.clock {
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 12px var(--glow), 0 0 32px var(--glow);
+}
+
+.clock span {
+    color: var(--accent);
 }

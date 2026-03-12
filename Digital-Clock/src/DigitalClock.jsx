@@ -36,7 +36,6 @@ function DigitalClock(){
       <div className="digital-clock">
             <div className="clock">
                 <span>{formatTime()}</span>
-
             </div>
       </div>
 

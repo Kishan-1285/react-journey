@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", "Segoe UI", Tahoma, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--ink-1);
   background:
     radial-gradient(900px 500px at 10% 10%, #ffe6d8 0%, transparent 60%),

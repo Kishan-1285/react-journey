@@ -1,0 +1,28 @@
+.class{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(183, 1, 1, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border: 2px solid #000;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  min-width: 280px;
+}

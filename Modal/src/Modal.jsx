@@ -17,7 +17,8 @@ function Modal() {
             {modalopen && (
                 <div className="overlay" onClick={close}>
                     <div className="container" onClick={(e) => e.stopPropagation()}>
-                        <h1>hello</h1>
+                        <h1>Hello World</h1>
+                        <p>This is a modal component.</p>
                         <button onClick={close}>Close</button>
                     </div>
                 </div>

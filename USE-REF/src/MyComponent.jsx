@@ -1,21 +1,31 @@
-import React,{ useState } from 'react'
+
+import {  useState,useEffect,useRef } from 'react';
 
 function MyComponent(){
 
-    const [value, setValue] = useState("");
+    // const[click,setClick] = useState("");
 
-    
+   const ref = useRef(0);
+
+   useEffect(()=>{
+    console.log("asdf");
+   });
+
+
+    const handleChange = () =>{
+        // setClick(e.target.value);
+        ref.current++;
+    }
+
+
 
     return(
         <>
-            <input
-                value={value}
-                onChange={(e) => {
-                    const next = e.target.value;
-                    setValue(next);
-                    console.log(next);
-                }}
-            />
+            <button onClick={handleChange}>Click Me</button>
+
+            {/* <input onChange={handleChange}
+               value={ref}
+            /> */}
         </>
     );
 

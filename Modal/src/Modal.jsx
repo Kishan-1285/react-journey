@@ -1,36 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import './Modal.css'
 
 function Modal() {
-    // March 28 update
-    // March 29 update
-    // March 30 update
-    // March 31 update
-    const [modalopen, setModalopen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false)
+    const closeBtnRef = useRef(null)
 
-    const open = () => {
-        setModalopen(true);
-    }
-
-    const close = () => {
-        setModalopen(false);
-    }
+    const open = () => setModalOpen(true)
+    const close = () => setModalOpen(false)
 
     return (
         <>
-            <button onClick={open}>Open</button>
-            {modalopen && (
-                <div className="overlay" onClick={close}>
-                    <div className="container" onClick={(e) => e.stopPropagation()}>
-                        <h1>Hello World</h1>
-                        <p>This is a modal component.</p>
-                        <button onClick={close}>Close</button>
+            <button className="modal-open-btn" onClick={open}>Open Modal</button>
+            {modalOpen && (
+                <div className="modal-overlay" onClick={close}>
+                    <div className="modal-container" onClick={(e) => e.stopPropagation()}>
+                        <header className="modal-header">
+                            <h2 className="modal-title">Hello World</h2>
+                            <button ref={closeBtnRef} className="modal-close" onClick={close} aria-label="Close modal">×</button>
+                        </header>
+                        <div className="modal-body">
+                            <p>This is an improved modal with CSS styling.</p>
+                        </div>
+                        <footer className="modal-footer">
+                            <button className="modal-action" onClick={close}>Close</button>
+                        </footer>
                     </div>
                 </div>
             )}
-             
         </>
     )
 }
 
 export default Modal
-// Change for 2026-04-23
+// Change for 2026-04-24

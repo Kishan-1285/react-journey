@@ -27,6 +27,7 @@
   box-shadow: 0 10px 30px rgba(2,6,23,0.2);
   overflow: hidden;
   transform: translateY(-8px);
+  animation: modal-enter 220ms ease-out both;
 }
 
 .modal-header {
@@ -69,4 +70,9 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+@keyframes modal-enter {
+  from { opacity: 0; transform: translateY(-12px) scale(0.995); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }

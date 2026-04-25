@@ -11,5 +11,9 @@ function App(){
 
 // Small update: Apr 24 change
 // (automated dated commit)
+export default App
+
+// Small update: Apr 25 change
+// (automated dated commit)
 
 export default App

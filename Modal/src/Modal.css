@@ -52,6 +52,13 @@
   cursor: pointer;
 }
 
+.modal-close:hover {
+  color: #ef4444;
+  transform: scale(1.05);
+}
+
+.modal-open-btn:hover { opacity: 0.95; }
+
 .modal-body {
   padding: 18px;
   color: #334155;

@@ -30,6 +30,11 @@
   animation: modal-enter 220ms ease-out both;
 }
 
+@media (max-width: 480px) {
+  .modal-container { width: 95%; margin: 0 12px; }
+  .modal-title { font-size: 16px; }
+}
+
 .modal-header {
   display: flex;
   align-items: center;

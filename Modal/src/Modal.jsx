@@ -8,6 +8,12 @@ function Modal() {
     const open = () => setModalOpen(true)
     const close = () => setModalOpen(false)
 
+    useEffect(() => {
+        if (modalOpen && closeBtnRef.current) {
+            closeBtnRef.current.focus()
+        }
+    }, [modalOpen])
+
     return (
         <>
             <button className="modal-open-btn" onClick={open}>Open Modal</button>

@@ -14,6 +14,14 @@ function Modal() {
         }
     }, [modalOpen])
 
+    useEffect(() => {
+        const onKey = (e) => {
+            if (e.key === 'Escape') close()
+        }
+        if (modalOpen) window.addEventListener('keydown', onKey)
+        return () => window.removeEventListener('keydown', onKey)
+    }, [modalOpen])
+
     return (
         <>
             <button className="modal-open-btn" onClick={open}>Open Modal</button>

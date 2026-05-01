@@ -27,9 +27,9 @@ function Modal() {
             <button className="modal-open-btn" onClick={open}>Open Modal</button>
             {modalOpen && (
                 <div className="modal-overlay" onClick={close}>
-                    <div className="modal-container" onClick={(e) => e.stopPropagation()}>
+                    <div className="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title" onClick={(e) => e.stopPropagation()}>
                         <header className="modal-header">
-                            <h2 className="modal-title">Hello World</h2>
+                            <h2 id="modal-title" className="modal-title">Hello World</h2>
                             <button ref={closeBtnRef} className="modal-close" onClick={close} aria-label="Close modal">×</button>
                         </header>
                         <div className="modal-body">

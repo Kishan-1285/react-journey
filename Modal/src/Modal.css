@@ -78,11 +78,13 @@
 
 .modal-action {
   padding: 8px 12px;
-  background: #eef2ff;
+  background: linear-gradient(90deg,#eef2ff,#e0f2fe);
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
+
+.modal-container { padding-bottom: 6px; }
 
 @keyframes modal-enter {
   from { opacity: 0; transform: translateY(-12px) scale(0.995); }

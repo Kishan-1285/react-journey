@@ -5,19 +5,17 @@ function Navbar() {
             <Link to="/">Home</Link><br />
             <Link to="/Contact">Contact</Link><br />
             <Link to="/AboutUs">AboutUs</Link><br />
-            <Link to="/student/1">
-                <button>Student 1</button>
+            <Link to="/Student/1">
+                Student 1
             </Link>
             <br />
-            <br />
-            <Link to="/student/2">
-                <button>Student 2</button>
+            <Link to="/Student/2">
+                Student 2
             </Link>
-            <br />
             <br />
 
-            <Link to="/student/3">
-                <button>Student 3</button>
+            <Link to="/Student/3">
+                Student 3
             </Link>
         </>
     )

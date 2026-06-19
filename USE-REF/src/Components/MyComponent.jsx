@@ -13,7 +13,7 @@ function MyComponent() {
            refe.current = name
         // console.log("Nice")
      },[name])
-    console.log("Hello");
+   //console.log("Hello");
    // console.log(refe.current);
 
     return (
@@ -23,7 +23,8 @@ function MyComponent() {
             <input type="text"
                 value={name}
                 ref={refe}
-                onChange={(event) => setName(event.target.value)} />
+                onChange={(event) => setName(event.target.value)} 
+            />
             <button onClick={Display}>Submit</button>
         </>
     )

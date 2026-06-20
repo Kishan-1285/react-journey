@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import Parent from './Components.jsx/Parent';
-import { domainContext } from './domainContext';
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import Profile from "./Profile";
+import { useState,createContext } from 'react'
 
-const App=()=> {
-  const[domain,setDomain] = useState("FullStack");
-  const onChange =()=>{
-    setDomain((dom)=>(dom==="FullStack"?"MERN":"FullStack"))
-  }
-  return (
-    <>
-    <domainContext.Provider value={domain}>
-      <Parent/>
-      <button onClick={onChange}>Click</button>
-    </domainContext.Provider>
-    </>
+export const valueContext = createContext();
+function App(){
+    const[val,setVal] = useState({name:"kishan",role:"Frontend Developer"})
+  return(
+    <valueContext.Provider value={val}>
+      {/* <h1>{value.name}</h1> */}
+      <Navbar/>
+      <Profile/>
+      <Footer/>
+     </valueContext.Provider>
   )
 }
 

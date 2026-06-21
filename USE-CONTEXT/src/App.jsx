@@ -1,11 +1,23 @@
-import ComponentA from "./ComponentA.jsx"
+import { useState } from "react";
+import { createContext } from "react";
+import Navbar from "./Navbar";
+import Home from "./Home";
 
-function App() {
+export const themeContext = createContext();
+
+function App(){
+
+  const[theme,setTheme] = useState("light");
+ 
+
   return(
-    <>
-      <ComponentA/>
-    </>
+
+    <themeContext.Provider value={{theme,setTheme}}>
+         <Navbar/>
+         <Home/>
+    </themeContext.Provider>
+
   )
 }
 
-export default App
+export default App;

@@ -7,6 +7,7 @@ const Users = () => {
         username: "",
         email: ""
     });
+    const [updateUser, setUpdateUser] = useState("");
     // console.log(formData)
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(true);
@@ -39,17 +40,18 @@ const Users = () => {
         })
     }
 
-    const handleSubmit = async(e) => {
-           e.preventDefault();
-           try{
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
             const response = await axios.put(
                 'https://jsonplaceholder.typicode.com/users/2',
                 formData
             )
-            console.log(response.data)
-           }catch{
-                console.log(error);
-           }
+            setUpdateUser(response.data);
+            // console.log(response.data)
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
@@ -57,9 +59,17 @@ const Users = () => {
             <form onSubmit={handleSubmit}>
                 <input type='text' value={formData.name} name='name' onChange={handleChange} /><br /><br />
                 <input type='email' value={formData.email} name='email' onChange={handleChange} /><br /><br />
-                <input type='username' value={formData.username} name='username' onChange={handleChange} /><br /><br />
+                <input type='text' value={formData.username} name='username' onChange={handleChange} /><br /><br />
                 <button type='submit'> Submit</button>
             </form>
+
+            {updateUser && (
+                <div>
+                    <h2>Name: {updateUser.name}</h2>
+                    <h2>Email: {updateUser.email}</h2>
+                    <h2>Username: {updateUser.username}</h2>
+                </div>
+            )}
         </div>
     )
 }

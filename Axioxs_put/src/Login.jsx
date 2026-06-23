@@ -16,7 +16,7 @@ const Login = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try{
-            const response = await axios.post(
+            const response = await axios.post(            // -------------------POST--------------------- // 
                   "https://jsonplaceholder.typicode.com/users",
                  formData
             )

@@ -14,7 +14,7 @@ const Users = () => {
     useEffect(() => {
         async function getUsers() {
             try {
-                const response = await axios.get(
+                const response = await axios.get(          //------------GET----------------//
                     'https://jsonplaceholder.typicode.com/users/2'
                 )
                 setFormData(response.data);
@@ -43,7 +43,7 @@ const Users = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(
+            const response = await axios.put(                 //--------------PUT---------------//
                 'https://jsonplaceholder.typicode.com/users/2',
                 formData
             )
@@ -69,7 +69,7 @@ const Users = () => {
                     <h2>Email: {updateUser.email}</h2>
                     <h2>Username: {updateUser.username}</h2>
                 </div>
-            )}
+            )} 
         </div>
     )
 }

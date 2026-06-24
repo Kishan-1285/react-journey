@@ -7,7 +7,7 @@ const Users = () => {
         username: "",
         email: ""
     });
-    const [updateUser, setUpdateUser] = useState("");
+    const [updateUser, setUpdateUser] = useState(null);
     // console.log(formData)
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(true);

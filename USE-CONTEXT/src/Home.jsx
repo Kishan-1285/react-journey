@@ -2,7 +2,6 @@ import React from 'react'
 import { useContext } from 'react';
 import { themeContext } from './App';
 
-
 function Home() {
     const home = useContext(themeContext);
 

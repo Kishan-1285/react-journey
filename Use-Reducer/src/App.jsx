@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  const [count, setCount] = useState(0);
+
+  const decrement = () => {
+    setCount(c => c - 1);
+  }
+
+  const increament = () => {
+    setCount(c => c + 1);
+  }
   return (
-    <div>App</div>
+    <>
+      <button onClick={decrement}>-</button>
+      <p>{count}</p>
+      <button onClick={increament}>+</button>
+    </>
   )
 }
 

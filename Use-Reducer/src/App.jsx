@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useReducer} from 'react'
 
 const App = () => {
+  // const reducerFunc = {
+  //   return
+  // }
   const [count, setCount] = useState(0);
+  // const [state , dispatch] = 
 
   const decrement = () => {
     setCount(c => c - 1);
